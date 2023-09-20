@@ -41,9 +41,19 @@ export default function App() {
   }
   return (
     <>
+      <h1 className="mainhead">To Do List</h1>
+      <p className="quote">
+        “If you don't sacrifice for what you want, what you want becomes the
+        sacrifice”
+      </p>
       <NewTodoForm onSubmit={addTodo} />
       <h1 className="header"></h1>
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+      <a href="https://linktr.ee/sharath3" className="namelink">
+        <p className="made">
+          Website made in React by <span> Sharath Chandra</span>
+        </p>
+      </a>
     </>
   );
 }
