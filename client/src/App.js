@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { NewTodoForm } from "./NewTodoForm";
 import TodoList from "./TodoList";
+import Penguin from "./Penguin";
 export default function App() {
   const [todos, setTodos] = useState(() => {
     const localValue = localStorage.getItem("ITEMS");
@@ -49,11 +50,13 @@ export default function App() {
       <NewTodoForm onSubmit={addTodo} />
       <h1 className="header"></h1>
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
-      <a href="https://linktr.ee/sharath3" className="namelink">
-        <p className="made">
-          Website made in React by <span> Sharath Chandra</span>
-        </p>
-      </a>
+      <Penguin />
+      <p className="made">
+        Made in React by{" "}
+        <a href="https://linktr.ee/sharath3" className="namelink">
+          <span> Sharath Chandra</span>
+        </a>
+      </p>
     </>
   );
 }
