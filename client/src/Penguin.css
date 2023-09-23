@@ -1,5 +1,5 @@
 .penguin {
-  --penguin-skin: black;
+  --penguin-skin: rgb(37, 33, 33);
   --penguin-belly: white;
   --penguin-beak: orange;
   position: relative;
